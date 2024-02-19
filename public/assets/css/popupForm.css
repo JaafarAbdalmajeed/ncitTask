@@ -1,0 +1,20 @@
+.popup,.popup-edit {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    z-index: 9999;
+}
+.popup.active, .popup-edit.active {
+    display: block;
+}
+.popup .close-btn,.popup-edit .popup-content {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+}
